@@ -67,6 +67,7 @@ Link into head of html:
   --sun-c: #f76414;
 
 
+
   --font-main: 'Zen Maru Gothic', sans-serif;
   --font-header: 'Zen Antique Soft', serif;
   --font-nav: 'Varela Round', sans-serif;
@@ -103,7 +104,6 @@ h2, h3, h1 {
 h1 {
   text-decoration: underline;
   text-align: center;
-  margin-top:40px;
 }
 
 p {
@@ -118,7 +118,8 @@ footer > p {
 table {
 background-color: var(--light-blue);
 padding: 1%;
-margin: 2%;
+margin-top: 2%;
+margin-bottom: 2%;
 margin-left: auto;
 margin-right: auto;
 border-radius: 1%;
@@ -195,8 +196,6 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
   .button,
   .button__secondary {
-    background-color: var(--dark-blue);
-    color: var(--bg-color);
     align-self: center;
   }
 
@@ -249,12 +248,12 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   min-width: 30%;
 }
 
-.page-header__item: first-child {
+.page-header__item:first-child {
   text-align: left;
   flex-grow: 0;
 }
 
-.page-header__item: last-child {
+.page-header__item:last-child {
   flex-grow: 3;
   text-align: right;
 }
@@ -291,7 +290,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
    display: grid;
    /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
    grid-template-columns: 1fr 1fr;
-   grid-gap: 20px;
+   grid-gap: 10px;
    margin: 0;
 
  }}
@@ -299,7 +298,6 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
 
 .grid {
-  display: grid;
   grid-auto-rows: minmax(350px, max-content);
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
