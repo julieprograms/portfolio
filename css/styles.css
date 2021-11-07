@@ -98,7 +98,7 @@ li {
 h2, h3, h1 {
   font-family: var(--font-header);
   font-size: 30px;
-  margin-top:40px;
+  margin-top: 40px;
 }
 
 h1 {
@@ -272,8 +272,69 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   margin-left: 15px;
 }
 
+form {
+  background-color: var(--dark-blue);
+  color: var(--pale-blue);
+  margin: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 10%;
+  box-sizing: border-box;
+  resize: vertical;
+  max-width: 400px;
+}
 
+label, input[type=submit] {
+  font-family: var(--font-nav);
+  font-size: 20px;
+  background-color: var(--dark-blue);
+  color: var(--pale-blue);
+  margin: 2% !important;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  border: 0;
+}
 
+textarea, input[type=standard-label], input[type=email], input[type=tel] {
+  background-color: var(--pale-blue);
+  color: var(--txt-color);
+  font-family: var(--font-main);
+  font-size: 25px;
+  display: inline-block;
+  justify-content: center;
+  margin: 1% !important;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  padding-bottom: 3%;
+  border-radius: 5%;
+}
+.email {
+  margin-top: 1%;
+  padding-top: 1%;
+}
+input[type=submit] {
+  padding-bottom: 10px;
+}
+
+textarea {
+  font-size: 25px;
+  padding-bottom: 50%;
+  border-radius: 20%;
+  align-self: center;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+  box-sizing: border-box;
+  resize: inherit;
+  width: 85%;
+}
+
+label:hover, input[type=submit]:hover {
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  text-decoration: underline;
+  color: var(--pale-blue);
+}
 
 /* Fallback option for the grid layout underneath */
 
@@ -373,6 +434,28 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
     min-height: 350px;
     min-width: 13em;
   }
+  form {
+    display: inline-block;
+    width:80%;
+  }
+  label, input, input[type=submit] {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  input[type=email], input[type=tel], textarea {
+    font-size: 12px;
+  }
+  textarea {
+    font-size: 12px;
+    width: 80%;
+    margin: 2% !important;
+  }
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 950px) {
@@ -392,12 +475,20 @@ body{
   .profile__portrait {
     width: 32%;
   }
+  textarea {
+    width: 80%;
+  }
+  label, input, input[type=submit] {
+    width: 80%;
+  }
+  input[type=email], input[type=tel], textarea {
+    font-size: 20px;
 }
 
 @media all and (max-width: 950px) {
 
   h1 {
-    font-size: 22px;
+    font-size: 25px;
   }
 }
 
