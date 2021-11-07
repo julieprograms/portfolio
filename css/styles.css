@@ -205,6 +205,7 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
+  color: var(--pale-blue);
 }
 
 
@@ -243,9 +244,13 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
   justify-content: space-evenly;
 }
 
-.page-header__item {
+.page-header__item{
   flex: 0 1 400px;
   min-width: 30%;
+}
+.header-logo {
+  flex: 0 1 200px;
+  min-width: 10%;
 }
 
 .page-header__item:first-child {
