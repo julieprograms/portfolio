@@ -90,8 +90,9 @@ body {
 li {
   background-color: var(--pale-blue);
   font-family: var(--font-nav);
-  border-radius: 40%;
-  padding: 1%;
+  font-size: 12px;
+  border-radius: 20%;
+  padding: 3%;
   margin: 1%;
 }
 
@@ -117,12 +118,12 @@ footer > p {
 
 table {
 background-color: var(--light-blue);
-padding: 1%;
+padding: 2%;
 margin-top: 2%;
 margin-bottom: 2%;
 margin-left: auto;
 margin-right: auto;
-border-radius: 1%;
+border-radius: 2%;
 border-bottom: 3px solid rgba(0, 0, 100, 0.1);
 border-right: 1px solid rgba(0, 0, 100, 0.1);
 }
@@ -246,11 +247,12 @@ transition: [transition-property] [transition-duration] [transition-timing-funct
 
 .page-header__item{
   flex: 0 1 400px;
-  min-width: 30%;
+  width: 30%;
 }
 .header-logo {
   flex: 0 1 200px;
   min-width: 10%;
+  height: 70px;
 }
 
 .page-header__item:first-child {
