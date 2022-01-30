@@ -56,12 +56,12 @@ Link into head of html:
 */
 
 :root {
-  --bg-color: #e6e9eb;
+  --bg-color: #85ceff93;
   --txt-color: #042121;
-  --light-blue: #f7f8ff;
-  --dark-blue: #0a2a2e;
-  --pale-blue: #edf3f7;
-  --green: #80727B;
+  --light-blue: #cbfafa;
+  --dark-blue: #065050;
+  --pale-blue: #b5dada;
+  --green: #1e8cf3;
   --sun-a: #edc655;
   --sun-b: #fcffad;
   --sun-c: #f76414;
