@@ -57,8 +57,8 @@ Link into head of html:
 
 :root {
     --bg-color: #373B44;
-    --txt-color: #042121;
-    --light-blue: #ffffff;
+    --txt-color: #ffffff;
+    --light-blue: #031f4b;
     --dark-blue: #033d3dc4;
     --pale-blue: #0a4b5059;
   
@@ -74,7 +74,7 @@ Link into head of html:
     background-color: var(--bg-color);
     color: var(--light-blue);
     font-family: var(--font-main);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
@@ -87,8 +87,8 @@ background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* C
 background: linear-gradient(to bottom, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 background: #373B44;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to bottom, #08749be5, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #08749be5, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   }
   
@@ -108,7 +108,7 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
 
   h2 {
       font-size: 18px;
-      color: #ffffffe0;
+      color: #1669eea1;
      
   }
   
@@ -120,6 +120,7 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
   
   p {
     padding-bottom: 20px;
+
   }
   
   footer > p {
@@ -167,14 +168,18 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
    font-weight: 600;
    color: #ffffffe0;
   }
+
+  .blue-link {
+    color: #1669eea1;
+  }
   
   .email {
       margin-top: -20px;
-    
-
   }
   
-  
+  .white {
+      color: var(--txt-color);
+  }
   /* not in use:
   .link:visited {
     /* visited link
@@ -226,7 +231,7 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
     cursor: pointer;
     /* reduces the opacity of the button to 80% */
     opacity: 0.8;
-    color: var(--pale-blue);
+    color: rgb(87, 155, 245);
   }
   
   
@@ -313,13 +318,11 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
   #about {
    padding-top: 5%;
    padding-bottom: 5%;
-    color:rgb(39, 40, 85);
+    
     font-size: 14px;
   }
 
-  .work-header {
-    color:rgb(39, 40, 85);
-  }
+  
 
   #hero {
       margin-top: 32%;
@@ -331,12 +334,9 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
     font-size: 50px;
     text-align: left;
     margin-bottom:-4%;
-    color: #1d2bf5d7;
+    color: #031f4b;
     font-size: 72px;
-  background: -webkit-linear-gradient(#fffffff5, #c3d4fdea);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 
 }
     
