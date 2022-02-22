@@ -95,21 +95,26 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
   li {
  
     font-family: var(--font-nav);
-    font-size: 15px; 
+    font-size: 18px; 
     padding: 3%;
     margin: 1%;
   }
   
   h2, h1 {
-    font-family: var(--font-header);
+    font-family: var(--font-nav);
     font-size: 30px;
     margin-top: 40px;
+  }
+
+  h2 {
+      font-size: 18px;
+      color: #ffffffe0;
+     
   }
   
   h1 {
     text-decoration: none;
     text-align: center;
-    font-family: var(--font-nav);
 
   }
   
@@ -159,6 +164,8 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
   a {
     text-decoration: none;
     color: inherit;
+   font-weight: 600;
+   color: #ffffffe0;
   }
   
   .email {
@@ -177,8 +184,8 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
   
   a:hover, a:focus {
     /* No underlining when hovering over a link, a:hover must be after a:visited*/
-    color: var(--txt-color);
-    text-decoration: underline;
+    color: rgb(87, 155, 245);
+    text-decoration: none;
   }
   /* not in use:
   .link:active {
@@ -230,6 +237,7 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
   .profile {
     max-width: 1000px;
     margin: 0 auto;
+    font-size: 14px;
     
   }
   
@@ -306,10 +314,11 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
    padding-top: 5%;
    padding-bottom: 5%;
     color:rgb(39, 40, 85);
+    font-size: 14px;
   }
 
   .work-header {
-    color:rgb(26, 28, 100);
+    color:rgb(39, 40, 85);
   }
 
   #hero {
@@ -324,7 +333,7 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
     margin-bottom:-4%;
     color: #1d2bf5d7;
     font-size: 72px;
-  background: -webkit-linear-gradient(#b2d8fcf5, #8aacfaea);
+  background: -webkit-linear-gradient(#fffffff5, #c3d4fdea);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
