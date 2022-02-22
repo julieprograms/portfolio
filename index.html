@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 <!--change to style.production.css once done!!! //-->
   </head>
 
@@ -26,14 +26,12 @@
           <li role="presentation">
             <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
           </li>
+          
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
+            <a href="#contact" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
+            <a href="#projects" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
           </li>
         </ul>
       </nav>
@@ -42,11 +40,97 @@
 
       <img class="profile__portrait" src="img/photoJulieJunge.png" alt="photo of Julie Junge smiling inmidst a forest">
       <h2>Nice to meet you!</h2>
-      <p>I wish I could let my work speak for me at this point, but I am not quite there yet. So for now my personality will do the heavy lifting. </p>
-      <p>In a few months that won't be the case anymore. Then this page will be brimming with projects and personality in equal amounts. And I can introduce myself as a full-stack web developer (to be)</p>
+      <p>Coming from a background in archaeology, art and theatre, Julie Junge will now take on projects with a background in the real world. </p>
+      <p> Get in touch if you are looking for a full-stack web developer that never grew up and can't help thinking out of the box. </p>
+
 <!-- add link later //-->
-      <div class="center"><a href="work.html" class="button">Check out some projects of mine</a></div>
+      <div class="center"><a href="#projects" class="button">See some projects</a></div>
+    
+    
+      <section id="projects">
+        <h1>Work</h1>
+        <div class="grid">
+        <!-- Grid items will live here -->
+         <div class="grid__item">
+          <img src="img/angular.JPG" alt="screenshot of the project" class="project-img">
+            <h2>chatApp</h2>
+            <p>A cross-platform mobile application that allows users to participate in a group chat. Chat users can read and send messages, pick a background color, share images and their location. The app uses React Native Async Storage to allow users to view stored messages when offline.</p>
+            <p>react native, expo, gifted chat, firestore/firebase</p>
+            <a href="https://github.com/julieprograms/chatApp">project data on github</a>
+   
+          </div>
+  
+          <div class="grid__item">
+            <img src="img/angular.JPG" alt="screenshot of the project" class="project-img">
+            <h2>watchIt-client (Angular)</h2>
+            <p>An alternative implementation of the watchIt client allowing the users to create a profile, log in, see a list of movies and the individual information of the movies, as well as create a custom watchlist among other functions. It is built using Angular and Typescript. The app works with the watchIt backened and is styled using Angular Material.</p>
+            <p>angular, angular material, typescript (and typedoc)</p>
+            <a href="https://github.com/julieprograms/watchIt-angular-client">project data on github</a>
+            <a href="https://julieprograms.github.io/watchIt-angular-client/welcome">check it out!</a>
+          </div>
+  
+           <div class="grid__item">
+            <img src="img/watchIt.png" alt="screenshot of the project" class="project-img">
+            <h2>watchIt-client (React)</h2>
+            <p>A React front end for the watchIt movie app that allows users to view information about movies, directors and genres for a selection of classic films. Users are able to create a profile and log in and add movies to their watchlist, among other CRUD functions.</p>
+            <p>react, react-bootstrap & css, react-redux</p>
+            <a href="https://github.com/julieprograms/watchIt-client">project data on github</a>
+           
+          </div>
+  
+          <div class="grid__item">
+            <img src="img/meetapp.png" alt="screenshot of the project" class="project-img">
+            <h2>meetApp</h2>
+            <p>A serverless, progressive web application that accesses the Google Calendar API to display information about worldwide events by Career Foundry. The app was built using a test-driven approach and uses a cloud-based server to perform user authentication with OAuth2.0.</p>
+            <p>react, jest, enzyme, serverless, googleapis, aws lambda, recharts</p>
+            <a href="https://github.com/julieprograms/meetApp">project data on github</a>
+            <a href="https://julieprograms.github.io/meetApp/">check it out!</a>
+          </div>
+          
+          <div class="grid__item">
+            <img src="img/watchIt.png" alt="screenshot of the project" class="project-img">
+            <h2>WatchIt Backend</h2>
+            <p>The server-side of the watchIt app, a REST API that interacts with a non-relational database to provide a complete back end for the movie web application providing endpoints and secure data storage.</p>
+            <p>node.js, express, mongodb, mongoose, passport (and jsdoc)</p>
+            <a href="https://github.com/julieprograms/watchIt">project data on github</a>
+  
+          </div>
+  
+          <div class="grid__item">
+            <img src="img/pokedex.png" alt="screenshot of the project" class="project-img">
+            <h2>Pokedex Api</h2>
+            <p>A simple, responsive web app that fetches data from an external API to create a directory of Pokémon. Users can click on items to view further details that are displayed in a custom modal.</p>
+            <p>html, javascript, bootstrap</p>
+            <a href="https://github.com/julieprograms/Pokedex-app">project data on github</a>
+            <a href="https://julieprograms.github.io/Pokedex-app/">check it out!</a>
+          </div>
+  
+  
+        
+        </div>
+  
+  
+      </section>
+  
+    
+    <section id="contact">
+      <h1>Contact me</h1>
+<p>Email:<details>junge.julie@web.de</details></p>
+
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
     </main>
+    
+    
+    
+    
     <footer class="page-footer">
       <p>Find me on</p>
 <!-- add link later //-->
