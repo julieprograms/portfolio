@@ -109,6 +109,7 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
   h1 {
     text-decoration: none;
     text-align: center;
+    font-family: var(--font-nav);
 
   }
   
@@ -314,19 +315,26 @@ background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, 
   #hero {
       margin-top: 32%;
       margin-bottom: 15%;
+      text-align: left;
       }
 
 .moin {
     font-size: 50px;
     text-align: left;
     margin-bottom:-4%;
+    color: #1d2bf5d7;
+    font-size: 72px;
+  background: -webkit-linear-gradient(#b2d8fcf5, #8aacfaea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
     
- h3 {
-            color: rgb(37, 39, 112);
-            font-family: var(--font-main);
-          }
-
+.about {
+min-width: 100%;
+    text-align: left;
+}
 
 
   
