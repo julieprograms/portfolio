@@ -58,9 +58,10 @@ Link into head of html:
 :root {
     --bg-color: #373B44;
     --txt-color: #ffffff;
-    --light-blue: #031f4b;
-    --dark-blue: #033d3dc4;
+    --light-blue: #3a7bd5;
+    --dark-blue: #03173dd3;
     --pale-blue: #0a4b5059;
+    --highlight: #e3f869;
 
     --link-color: #579bf5;
     --project-header:#1669eea1;
@@ -81,9 +82,9 @@ Link into head of html:
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
-    margin: 20px 80px;
     padding-left: 10%;
     padding-right: 10%;
+    overflow-x: hidden;
 
     background: #0F2027;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
@@ -130,7 +131,9 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
     padding-bottom: 0;
     padding-top: 20px;
   }
-  
+  footer {
+    padding-bottom:10px;
+  }
   table {
   background-color: var(--light-blue);
   padding: 2%;
@@ -181,8 +184,9 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
   }
   
   .white {
-      color: var(--txt-color);
-      color: #aad1fd9d;
+    color: var(--highlight);
+      color: #e8f2fdec;
+     
   }
   /* not in use:
   .link:visited {
@@ -252,13 +256,6 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
     
   }
   
-  .profile__portrait {
-    width: 32%;
-    margin: 30px;
-    float: left;
-    border-radius: 20%;
-    
-  }
   
   .project-img {
     max-height: 200px;
@@ -322,9 +319,10 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
   }
 
   #about {
-   padding-top: 5%;
-   padding-bottom: 5%;    
-    font-size: 14px;
+    padding-top:10%;
+    font-size: 16px;
+    font-weight: 500;
+  
   }
 
   .icon {
@@ -350,22 +348,45 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
 }
 .moinmoin {
     color:#aad1fd9d;
-    color: var(--light-blue);
+    color: var(--dark-blue);
 }
 
 .work-header{
     color:#aad1fd9d;
 }
 
-  
+
+
 .about {
-min-width: 100%;
+  max-width:50%;
+  flex: 1;
+ flex-shrink:0;
+  
     text-align: left;
-    color: #aad1fd9d;
+    color: #aad1fdf6;
     color:var(--light-blue);
+    
 }
 
 
+.about-background {
+  background-color: #010e1d9d;
+  display:block;
+  margin-left: -30%;
+  margin-right: -30%;
+
+overflow-x: hidden;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right:10%;
+  margin-left: 10%;
+  
+
+}
   
   /* Fallback option for the grid layout underneath */
   
@@ -422,14 +443,25 @@ min-width: 100%;
   @media all and (max-width: 500px) {
   
     .grid {
-       
+        width:100%;
         grid-template-columns: 1fr;
-    }    
+        justify-content: center;
+        
+        padding-left: 5%;
+        padding-right: 5%;
+    }  
+
+    .grid__item {
+     width:100%;
+    place-self: center;
+    }
+
     body{
-      margin-left: 1%;
-      margin-right: 1%;
+  
       padding-top: 30px;
-      padding: 2%;
+      justify-items: center;
+      overflow-x:hidden;
+ 
     }
   
     .header-logo {
@@ -439,13 +471,42 @@ min-width: 100%;
     top: 5px;
     }
   
-
-    .profile__portrait {
-      width: 50%;
-      margin-right: 25%;
-      margin-left: 25%;
+    #profile__portrait {
+      width: 80%;
     }
+    
+   .about {
+     max-width:100%;
+    
+   }
+
+   .about-container {
+    margin-left:20%;
+    margin-right:10%;
    
+      overflow: hidden;
+    
+    flex-direction: column;
+    align-items:center;
+  }
+  #hero {
+    padding-top:50%;
+    padding-bottom: 30%;
+    margin-left:5%;
+  }
+
+  #about {
+    padding-top:0;
+  }
+  
+  #contact {
+    padding-top:10%;
+    padding-bottom:40%;
+  }
+
+  footer {
+    padding-bottom:5%;
+  }
 
     
     h1 {
@@ -457,16 +518,47 @@ min-width: 100%;
   @media all and (min-width: 500px) and (max-width: 950px) {
   
   body{
-      margin-left: 20px;
-      margin-right: 20px;
-      padding-top: 20px;
-      padding: 10px;
-      display: inline-block;
+      margin: 2%;
+    display: inline-block;
+      
+      
     }
   
-  
-    .profile__portrait {
-      width: 32%;
+    .about-container {
+      display: flex;
+      justify-content: stretch;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      
+      margin-left:20%;
+      overflow-x: hidden;
+    
+    }
+    .about {
+      max-width:80%; 
+    }
+    #hero {
+      padding-top:30%;
+      padding-bottom: 10%;
+    }
+    #about {
+      padding-top:0;
+     
+    }
+    #tech-stack {
+      padding:1%;
+      padding-top:0;
+      padding-bottom:5%;
+     
+    }
+    #profile__portrait {
+      width: 80%;
+     
+    }
+    #contact {
+      padding-top:5%;
+      padding-bottom:4%;
     }
     .grid {
         grid-template-columns: 1fr;
