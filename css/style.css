@@ -52,7 +52,7 @@ Link into head of html:
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
 
-
+--font-nav: 'Lacquer', cursive;
 */
 
 :root {
@@ -69,7 +69,7 @@ Link into head of html:
   
     --font-main: 'Zen Kaku Gothic Antique', sans-serif;
     --font-header: 'Yusei Magic', sans-serif;
-    --font-nav: 'Lacquer', cursive;
+    --font-nav: 'Rubik', sans-serif;
   }
   
   
