@@ -183,10 +183,11 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
       margin-top: -20px;
   }
   
-  .white {
+  .highlight {
     color: var(--highlight);
-      color: #e8f2fdec;
-     
+  }
+  .white {
+      color: #aad1fdcb;  
   }
   /* not in use:
   .link:visited {
@@ -316,6 +317,7 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
 
   #contact {
       margin-top: 15%;
+  
   }
 
   #about {
@@ -353,6 +355,8 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
 
 .work-header{
     color:#aad1fd9d;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 
@@ -371,6 +375,7 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
 
 .about-background {
   background-color: #010e1d9d;
+  background-color: rgba(0, 0, 0, 0.651);
   display:block;
   margin-left: -30%;
   margin-right: -30%;
