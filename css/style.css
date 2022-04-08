@@ -342,15 +342,15 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
       }
 
 .moin {
-    font-size: 50px;
     text-align: left;
     margin-bottom:-4%;
     color: #e3f869;
-    font-size: 72px;
+    font-size: 86px;
 }
 .moinmoin {
     color:#aad1fd9d;
     color: var(--dark-blue);
+    font-size: 16px;
 }
 
 .work-header{
@@ -360,11 +360,12 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
 }
 
 
-
 .about {
   max-width:50%;
   flex: 1;
- flex-shrink:0;
+  flex-shrink:1;
+  margin:2%;
+
   
     text-align: left;
     color: #aad1fdf6;
@@ -372,6 +373,17 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
     
 }
 
+.skillset {
+  font-size: 16px;
+}
+
+.profile__portrait {
+  border-bottom: solid 3px #579bf5;
+  border: solid 3px #579bf5;
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 
 .about-background {
   background-color: #010e1d9d;
@@ -559,7 +571,9 @@ overflow-x: hidden;
     }
     #profile__portrait {
       width: 80%;
-     
+      margin-top: 5%;
+      margin-left:10%;
+      margin-right:10%;
     }
     #contact {
       padding-top:5%;
