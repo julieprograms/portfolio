@@ -61,7 +61,7 @@ Link into head of html:
     --light-blue: #3a7bd5;
     --dark-blue: #03173dd3;
     --pale-blue: #0a4b5059;
-    --highlight: #e3f869;
+    --highlight: #e3f869bb;
 
     --link-color: #579bf5;
     --project-header:#1669eea1;
@@ -185,6 +185,8 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
   
   .highlight {
     color: var(--highlight);
+    font-weight: bold;
+ 
   }
   .white {
       color: #aad1fdcb;  
@@ -259,8 +261,10 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
   
   
   .project-img {
-    max-height: 200px;
+    max-height: 300px;
     max-width: 100%;
+    
+  
   }
   
   .page-footer {
@@ -310,10 +314,6 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
     margin-left: 15px;
   }
 
-  #projects {
-      margin-top: 15%;
-      display: grid;
-  }
 
   #contact {
       margin-top: 15%;
@@ -378,8 +378,7 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
 }
 
 .profile__portrait {
-  border-bottom: solid 3px #579bf5;
-  border: solid 3px #579bf5;
+  border: solid 3px #2963b0;
   border-radius: 50%;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -404,6 +403,17 @@ overflow-x: hidden;
   
 
 }
+
+#projects {
+  margin-top: 15%;
+  display: grid;
+  margin-left: -10%;
+  margin-right: -10%;
+  
+  min-width:90%;
+}
+
+
   
   /* Fallback option for the grid layout underneath */
   
@@ -415,11 +425,14 @@ overflow-x: hidden;
   
   @supports (display: grid) {
    .grid {
+   
      display: grid;
+     
      /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
      grid-template-columns: 1fr 1fr;
-     grid-gap: 10px;
-     margin: 0;
+     grid-gap: 12px;
+
+     
   
    }}
   /* End of Fallback Option */
@@ -429,7 +442,9 @@ overflow-x: hidden;
     color: rgba(255, 255, 255, 0.76);
     min-width: 400px;
     text-align: left;
-    padding: 6%;
+    padding: 5%;
+    padding-bottom: 15%;
+  
   }
   .grid {
     grid-template-rows: minmax(fit-content, max-content);
@@ -458,19 +473,23 @@ overflow-x: hidden;
   /* media query to resize on smaller formats starts here */
   
   @media all and (max-width: 500px) {
-  
+    #projects {
+      margin-left: 30%;
+      margin-right: 30%;
+    }
     .grid {
-        width:100%;
+      
         grid-template-columns: 1fr;
         justify-content: center;
-        
+      
         padding-left: 5%;
         padding-right: 5%;
     }  
 
     .grid__item {
-     width:100%;
-    place-self: center;
+     
+     max-width:100%;
+  
     }
 
     body{
@@ -589,9 +608,18 @@ overflow-x: hidden;
   
   @media all and (max-width: 950px) {
   
+    #projects {
+     
+      align-items: center;
+
+    }
     h1 {
       font-size: 25px;
     }
-    
+    .grid__item {
+      max-width: 100%;
+     padding: 13%;
+   
+    }
    
   }}
