@@ -350,7 +350,7 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
 .moinmoin {
     color:#aad1fd9d;
     color: var(--dark-blue);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .work-header{
