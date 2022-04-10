@@ -275,7 +275,9 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
   }
   
   .page-footer {
-    margin-top: 28%;
+    margin-top: 14%;
+    margin-bottom: 8%;
+
   }
   
   .page-header {
@@ -316,7 +318,7 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
 
 
   #contact {
-      margin-top: 20%;
+      margin-top: 12%;
   
   }
 
