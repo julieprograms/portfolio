@@ -486,10 +486,11 @@ overflow-x: hidden;
   
   @media all and (max-width: 500px) {
     #projects {
-      margin-left: 30%;
-      margin-right: 30%;
+      margin-left: 14%;
+      margin-right: 14%;
     }
     .grid {
+      min-width:100%;
       
         grid-template-columns: 1fr;
         justify-content: center;
@@ -501,8 +502,10 @@ overflow-x: hidden;
     .grid__item {
      
      max-width:100%;
+     min-width:20em;
   
     }
+   
 
     body{
   
@@ -520,7 +523,9 @@ overflow-x: hidden;
     }
   
     #profile__portrait {
-      width: 80%;
+      width: 90%;
+      margin-left:5%;
+      margin-right:5%;
     }
     
    .about {
@@ -561,6 +566,16 @@ overflow-x: hidden;
       font-size: 22px;
       text-align: center;
     }
+
+    .second-img {
+      margin-left:6%;
+      max-height: 200px;
+    }
+    .single-img {
+      margin-left: 20%;
+      max-height: 200px;
+    
+    }
   }
   
   @media all and (min-width: 500px) and (max-width: 950px) {
@@ -587,11 +602,13 @@ overflow-x: hidden;
       max-width:80%; 
     }
     #hero {
-      padding-top:30%;
-      padding-bottom: 10%;
+      padding-top:50%;
+      padding-bottom: 30%;
     }
     #about {
       padding-top:0;
+      padding-left:5%;
+ 
      
     }
     #tech-stack {
@@ -607,12 +624,26 @@ overflow-x: hidden;
       margin-right:10%;
     }
     #contact {
-      padding-top:5%;
-      padding-bottom:4%;
+      padding-top:10%;
+      padding-bottom:10%;
+      
+    }
+    #projects{
+      margin-left: 10%;
+      margin-right: 10%;
     }
     .grid {
         grid-template-columns: 1fr;
+        max-width:100%;
+        min-width:20em;
+      
     } 
+    .second-img {
+      margin-left:6%;
+    }
+    .single-img {
+      margin-left: 20%;
+    }
 
     .grid__item {
         max-width: 500px;
@@ -628,10 +659,19 @@ overflow-x: hidden;
     h1 {
       font-size: 25px;
     }
+    .grid{
+      max-width:100%;
+      min-width:20em;
+    
+    }
     .grid__item {
-      max-width: 100%;
+      min-width: 100%;
      padding: 13%;
    
     }
+    .project-img{
+      max-height:200px;
+    }
+   
    
   }}
