@@ -285,6 +285,11 @@ background: linear-gradient(to bottom, #3a7bd5,#505b75, #3d4861, #373B44); /* W3
     width: 100%; 
     margin-bottom: 20px;
     justify-content: space-evenly;
+    justify-content: right;
+  }
+
+  nav {
+    position:fixed;
   }
   
   .page-header__item{
